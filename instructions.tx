@@ -1,0 +1,484 @@
+t1. JS History / ECMA
+1. JS Data Types -> 
+1. Variables
+2. Type of Variable -> 1. Local Variable 2. Global Variable
+3. Variable Naming Convention
+4. Functions
+   Nested functions/Inner functions
+   Callback Function:
+   Higher Order Function
+   First Class Function
+   Function Closure
+   Function Currying;
+
+5. Old way of defining functions
+6. New way of defining functions
+7. Actual Arguments
+8. Formal Argument
+9. Default Arguments
+10. Function returning something
+11. Precedence of Operator
+12. Associativity of Operator
+13. JS Object
+14. JS Object Member -> 1. Property: Value 2. Methods
+15. JS Object Restructurings
+15. Optional Chaining Operator ?.
+
+15. JS Operator,  Spread Operator, Rest Operator, 
+
+16. Rename Property while Destructuring
+16. How to delete Property a Property of JS Object?
+17. Arrays
+18. How to access the first element of array.
+19. How to access the last element of array.
+20. Class
+21. Class Instantiation.
+22. Class Internal Object
+23. Class External Object
+24. Class members. 1. Property 2. Constructor. 3. Methods
+25. Class Inheritance
+25. Diff between Let, Var and Const
+26. Types of Loops in JS
+27. Conditional Statement. 1. if, if else if, if elseif elseif else , 2. Ternary operator C?T:F;
+28. JS Hoisting
+29. JS Strict Mode
+30. JS Callback Functions 
+31. JS Promise , Promise Chain. 
+32. JS Boxes, 1. Alert Box, 2. Prompt Box. 3. Confirm Box.
+34. JS Events -> Click, Keyup, KeyDown
+35. DOM Traversing -> Traversing Up / Traversing Down
+36. IIFE (cbfn)();
+
+37. JS Import / Export
+	Default Export/Import
+	Named Export/Import
+
+38. Class Inheritance
+
+
+Function returning something
+
+Function returning Number 10
+Function returning String ""
+Function returning Array  []
+Function returning Object {}
+Function returning Class Object
+Function returning Function
+Function returning Class
+
+
+Function receiving something as formal Argument
+
+Function receiving Number 10
+Function receiving String ""
+Function receiving Array  []
+Function receiving Object {}
+Function receiving Class Object
+Function receiving Function
+Function receiving Class
+
+
+Function returning Function
+Function receiving Function
+
+Try Catch Finally Block
+
+
+Function Currying
+-----------------------------------------------------------------------------
+Query String
+HTML Forms
+HTTP Methods
+	1. GET
+	2. POST
+	3. PUT
+	4. DELETE
+	5. PATCH
+------------------------------------------------------------------------
+
+ES6(2015) Operators
+... Spread Opertor/Copy Copertaor
+... Rest Operator/FA
+1. Optional Chaining ?.
+
+2. Nullish Coalescing Operator (??)
+How many ways i can export in JavaScript?
+
+ES6 modules
+1. Named Exports
+	1.1 Inline exports
+	1.2 Export list  
+	1.3 Rename while exporting  export { op as np }
+2. Default Exports
+	2.1 Exporting directly
+	2.2 Exporting named function/class/variable
+
+
+
+From now onward we will always use optional chaining operator to access JS Object members
+
+?.
+
+
+2. Nullish Coalescing Operator (??)
+
+Operand
+10 = Left Operand
+20 = Right Operand
+
+let result  = 10 ?? 20;
+console.log(result);
+
+let result  = null ?? 20;
+console.log(result);
+
+let result  = null/undefined ?? 20;
+console.log(result);
+
+let result  =  20 ?? null/undefined;
+console.log(result);
+
+
+I can export/import Anything
+1. Variables
+2. Function
+3. Array []
+4. Object {}
+5. Class
+6. Class Object
+
+Functions
+	Nested functions/Inner functions
+	Callback Function
+	Higher Order Function
+	First Class Function
+	Function Currying
+	Function Closure
+
+Example of Function receiving Function ?
+
+Example of Function returning Function ?
+
+
+//1. Function define
+	
+	//Every function may return something
+
+
+//2. Function Call
+
+
+Higher Order Function HOF
+is a function which accept Function and return Function
+
+Higher Order Function
+Function Closure
+
+Method/Function Chaining
+
+add().sub().mul().div();-> Function Chaining
+add()()(); 		-> Function curry
+sub()();   		-> Function curry
+()();      		-> IIFE
+
+
+Example of Function receiving Function ? cbfn
+Example of Function returning Function ? function curry
+
+
+Create a JS Program to calculate
+1. add(5)(5)(5);    //Output 15 (Function Curry)
+2. sub(50)(10)(10);  //OUtput 30 (Function Curry)
+3. add(100).sub(20).mul(2).div(4)  //Output 4 (Method Chaining)
+
+Function receiving Function
+Function returning Function
+
+IP Address 
+ 127.0.0.1
+DNS = Domain Name System
+
+Domain -> Ip Address
+
+Flipkart IP Address
+
+163.53.76.86
+
+www.flipkart.com -> 163.53.76.86
+
+ Architecture
+
+
+Before submitting any assignment
+
+1. Bootstrap 5.x  RWD
+	1.1  <meta name="viewport"
+	1.2  Link
+	1.3  Script
+2. Validate 
+	2.1  W3C Validator
+        2.2  ChatGPT 
+
+
+
+Query String
+?name=value&name=value&...
+URL
+
+
+
+Client >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Server (DB -> Sqlite)
+1. Query String
+2. JSON
+
+Client <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Server
+1. JSON (JavaScript Object Notation)
+
+I want to create a query string so that i can send information from client to server
+We use HTML form to create query string
+
+1. First Name
+2. Lastname
+
+Blocking Technique
+
+TBDR = Temp border
+
+
+<label> and <input /> are children's of Form
+
+
+Client Server(DB) Architecture
+
+
+CMS  = Content/Data Management System
+
+What is Content ?
+
+1. Text
+2. Video
+3. Audio
+4. PDF
+
+
+You need to create ContentTypeBuilder/Collection/Tables
+
+
+Database -> Table -> Data
+
+
+
+Strapi.io 
+
+
+Headless CMS
+
+
+Strapi Student Collection
+
+GUI - Graphical User Interface
+
+
+1. Single Record/Entry GUI
+2. Other Records API
+
+
+API = Application Programming Interface
+
+Strapi provide Api
+
+
+API Testing Tool
+1. POSTMan
+2. VS ThunderClient
+
+
+
+1. POST
+
+POST -> BODY -> RAW -> Paste JSON
+
+
+STrapi Documentation Plugin Install
+
+http://localhost:1337/admin/settings/users-permissions/roles/2
+
+1. Route
+2. Path
+3. Endpoint
+
+
+http://localhost:1337/admin/settings/users-permissions/roles/2
+
+
+http://localhost:1337/api/students
+1. Route
+2. Path
+3. Endpoint
+
+1. Client Server Architecture Revision
+2. Types of API 
+3. How to access any localhost application with https URL ?
+4. How to Manage API Endpoint in proper Postman Collection ?
+5. How to Manage Public (https) and Local (http) endpoint with Environments in Postman ?
+6. Difference between JS Object {} and JSON ?
+7. How to Kill/close/terminate Strapi Service ?
+     Ctrl + C
+
+
+Types of API 
+1. Public API
+2. Private/Protected/Authenticated API
+
+
+JSON Payload
+{
+  "data": {
+    "first_name": "string",
+    "last_name": "string"
+  }
+}
+
+
+3. How to access any localhost application with https URL ?
+
+
+http://localhost:1337/api/friends
+
+ngrok
+
+https://subdomain.domain.tld/api/friends
+
+
+ngrok.exe
+
+C > Windows > System32 -> Paste
+
+Local URL
+	http://localhost:1337/api/friends
+	https://f6a3-2401-4900-1ca3-85b3-c0e1-5e91-ca88-d42c.ngrok-free.app/api/friends
+Public URL
+	https://91ad-2401-4900-1ca3-85b3-c0e1-5e91-ca88-d42c.ngrok-free.app
+ 	https://f6a3-2401-4900-1ca3-85b3-c0e1-5e91-ca88-d42c.ngrok-free.app
+
+ngrok http http://localhost:1337
+
+Types Of API
+1. Public API
+2. Private API 
+
+1. ngrok 
+  window + x -> Terminal (Admin)
+
+Long Command
+	ngrok http http://localhost:1337
+Short Command
+   	ngrok http 1337
+ 
+
+Employees CRUD Private API
+
+. By Default API is Private
+
+
+How we can get data from Private API ?
+
+1. Register API ?
+2. Login  API ?
+3. JWT -> JSON WEB Token
+4. Query With this JWT
+
+Environment ?
+Environment CONSTANTS ?
+ 
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzQ4OTIyOTg1LCJleHAiOjE3NTE1MTQ5ODV9.RdoiOWHxbCXmbVSiXwA9TZkLtpNnY1cfg9peF8t57js
+
+JWT 
+is a collection of 3 Parts
+JWT = Part1.Part2.Part3  ?
+JWT = Header.Payload.Signature
+
+
+
+Version = Part1.Part2.Part3
+Version = v5.14.2
+          MajorNo.MinorNo.PatchNo
+v1.0.0
+
+
+
+Create -> POST
+Read   -> GET
+Update -> PUT
+Delete -> DELETE
+
+
+Client >>>>>>>>>>>>>>>>>>>>>>>>> Server
+
+1. How to upload a file with API in Strapi?
+
+POST > BODY -> FormData -> Key Value
+
+2. What is the expiry time for JWT Token in Strapi ?
+    30Days
+3. We can regenerate the JWT Token 
+
+2. How to filters data with API in Strapi?
+3. How to Sort data with API in Strapi?
+
+3. How to Filter data with API in Strapi?
+
+Anil
+Swapnil
+
+nil
+
+4. What is the limit for character in GET Method?
+	2,048 (Chrome)
+
+Yesterday
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzQ4OTIyOTg1LCJleHAiOjE3NTE1MTQ5ODV9.RdoiOWHxbCXmbVSiXwA9TZkLtpNnY1cfg9peF8t57js
+
+Today
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzQ5MDA4ODA3LCJleHAiOjE3NTE2MDA4MDd9.z-427v5AI3xe1uUNgvnNIHtc9tN3TqdzjSd2ZYZ-B6s
+
+
+Today We will study
+1. How to call the API with JS to Send data to Server ?
+	1.1 XMLHttpRequest Class (JS)
+	1.2 Fetch API Function (JS)
+	1.3 $.ajax()/$.post() (JQuery)
+	 
+2. How to read JSON Response on Client Which as sent by Server ?
+
+      Client <<<<<<<<<<<<<<<<<<<JSON<<<<<<<<<<<<<<<<<<<<< Server
+    Browser 
+    ShowList
+						Strapi JSON
+     1. Anil					{
+     2. Sunil					   "friends":["Anil","Sunil"]
+						}
+     
+
+Browser
+1. Create Form >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. Server
+
+
+
+
+
+
+
+<form action="" method="" >
+<form method="" action="" >
+
+action = Where = Kaha
+method = How   = Kese
+      
+What data you want to send
+
+
+Page Reload
+
+
+
