@@ -10,10 +10,10 @@
         <div class="container">
             <div class="row mt-5">
                 <div class="col-8 offset-2">
-                    <form method="POST" action="http://localhost:1337/api/cars">
+                    <form>
                         <input type="text" name="car_name" class="form-control form-control-lg mb-4" placeholder="Enter your Car Name" />
                         <div class="d-grid">
-                            <input type="submit" value="Save" class="btn btn-primary btn-lg" onclick="anil(event)" />
+                            <input type="submit" value="Save" class="btn btn-primary btn-lg" onclick="sendData(event)" />
                         </div>
                     </form >
                 </div>
@@ -60,10 +60,65 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
         <script>
             //1. Function defination
-            function anil(evnt){ // e is a formam argument
+            function sendData(e){ // e is a formal argument
                 //object.method();
-                evnt.preventDefault();
+                e.preventDefault(); // To stop page reloading
                 console.log('I am inside anil function');
+                //I want to access form data here..
+                //On which element this event is happening ?
+                //Traversing Up
+                console.log(e.target.closest('form'));
+
+                //Traversing Down
+                console.log(e.target.closest('form').querySelector('input:first-child').value);
+                var cname = e.target.closest('form').querySelector('input:first-child').value;
+
+                //Let prepare our payload
+                /*
+                    {
+                        "data": {
+                            "name": "TaTa Nexon"
+                        }
+                    }
+                    {
+                        "data": {
+                            "car_name": "string",
+                        }
+                    }
+                */
+                /*
+                    class A{
+                        //1. Property
+
+                        //2. Constructor
+
+
+                        //3. Method
+                    
+                    }
+                */
+                //console.log(jsobject);
+              //let ceo1 = new ClassName();
+                var xhr  = new XMLHttpRequest();
+                
+                // Set headers
+
+                //How you can access class method
+                //object.method(method, url, async, user, psw);
+                 //Call the api
+                 xhr.open("POST","http://localhost:1337/api/cars",true);
+                
+                const data = JSON.stringify({
+                    data: {
+                        car_name: `${cname}`
+                    }
+                });
+
+                xhr.send(data);
+               
+
+
+
             }
         </script>
     </body>
