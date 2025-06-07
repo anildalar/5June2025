@@ -1,4 +1,4 @@
-t1. JS History / ECMA
+1. JS History / ECMA
 1. JS Data Types -> 
 1. Variables
 2. Type of Variable -> 1. Local Variable 2. Global Variable
@@ -476,9 +476,75 @@ action = Where = Kaha
 method = How   = Kese
       
 What data you want to send
+Payload is ready 
 
 
 Page Reload
+
+1. How to Stop Page Reload which submit button is clicked
+2. How to send data to server without page reload ?
+	AJAX Technique -> Google -> LiveLoad
+	Asynchronous JavaScript And XML
+
+
+Traversing UP 
+Traversing Down
+
+
+Client <<<<<<<<<<<<<<<<<<<JSON<<<<<<<<<<<<<<<<<<<<< Server
+Client >>>>>>>>>>>>>>>>>>>>JSON>>>>>>>>>>>>>>>>>>> Server
+
+
+What is this ?
+
+let payload = {
+                        "data": {
+                            "name": car_name
+                        }
+                    };
+
+
+I want to Convert JS Object into JSON
+
+JS Object >>>>>>> JSON.stringify(payload)>>>>>>>>   JSON 
+
+HOw you can convert a JS Obect into JSON ?
+What CURL ?
+
+What Linux command is used to call the API/Endpoint ?
+
+Ans.  CURL Command
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Request
+Client >>>>>>>>>>>>>>>>>>>>JSON>>>>>>>>>>>>>>>>>>> Server Save
+
+Response
+Client <<<<<<<<<<<<<<<<<<<JSON<<<<<<<<<<<<<<<<<<<<< Server
+xhr.readyState=4              ResponseCode 201
+
+
+
+
+
+
+
+
+
 
 
 

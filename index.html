@@ -73,51 +73,47 @@
                 console.log(e.target.closest('form').querySelector('input:first-child').value);
                 var cname = e.target.closest('form').querySelector('input:first-child').value;
 
-                //Let prepare our payload
-                /*
-                    {
-                        "data": {
-                            "name": "TaTa Nexon"
-                        }
-                    }
-                    {
-                        "data": {
-                            "car_name": "string",
-                        }
-                    }
-                */
-                /*
-                    class A{
-                        //1. Property
 
-                        //2. Constructor
-
-
-                        //3. Method
+                //let ceo1 = new ClassName();
+                const xhr = new XMLHttpRequest(); 
+                xhr.onreadystatechange = function() {
                     
+                    if (this.readyState == 4 && this.status == 201) {
+                        alert("Car Saved Successfully");
                     }
-                */
-                //console.log(jsobject);
-              //let ceo1 = new ClassName();
-                var xhr  = new XMLHttpRequest();
-                
-                // Set headers
-
-                //How you can access class method
-                //object.method(method, url, async, user, psw);
-                 //Call the api
-                 xhr.open("POST","http://localhost:1337/api/cars",true);
-                
-                const data = JSON.stringify({
-                    data: {
-                        car_name: `${cname}`
+                    /*
+                    1.
+                    if (this.readyState == 4 && this.status == 201) {
+                        alert("Car Saved Successfully");
                     }
-                });
+                    2.
+                    if (true && true) {
+                        alert("Car Saved Successfully");
+                    }
+                    3.
+                    if (true) {
+                        alert("Car Saved Successfully");
+                    }
+                    */
+                };   
+                //I am setting the Headers
+                xhr.open("POST", "http://localhost:1337/api/cars", true);
 
-                xhr.send(data);
+                xhr.setRequestHeader("Content-Type", "application/json");
+                xhr.setRequestHeader("Accept", "application/json"); 
+
+                //object.member
+                //1. object.property
+                //2. object.method(aa1,aa2); //camleCase
                
-
-
+                // Optional: If authentication is required
+                // xhr.setRequestHeader("Authorization", "Bearer YOUR_JWT_TOKEN");
+                const data = {
+                    data: {
+                        car_name: cname,
+                    }
+                };
+                xhr.send(JSON.stringify(data));
 
             }
         </script>
