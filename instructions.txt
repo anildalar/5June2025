@@ -539,6 +539,41 @@ xhr.readyState=4              ResponseCode 201
 
 
 
+1. Use SweetAlert instead of Normal Alert
+2. Get Data from Backend Server using API
+
+
+Object.member
+Object.method(aa1,aa2,aa3);
+
+Swal.fire({
+	1. Property:Value
+	title: 'Error!',
+  	text: 'Do you want to continue',
+  	icon: 'error',
+  	confirmButtonText: 'Cool'
+	
+	2. Method
+});
+
+Today we will learn 
+1. Sweet alert instead Normal alert.
+2. Read Operation with AJAX i.e XMLHttpRequest Class
+
+
+JS Object --------JSON.stringify()----------> JSON
+
+
+Client ----------------JSON-------------------> Server
+
+Client <----------------JSON String------------ Server
+
+JSON String --------JSON.parse()--------> JSON
+
+[]= Array
+[{},{},{}] = Array Of Objects
+
+
 
 
 
