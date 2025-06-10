@@ -539,6 +539,7 @@ xhr.readyState=4              ResponseCode 201
 
 
 
+
 1. Use SweetAlert instead of Normal Alert
 2. Get Data from Backend Server using API
 
@@ -561,6 +562,9 @@ Today we will learn
 2. Read Operation with AJAX i.e XMLHttpRequest Class
 
 
+
+ 
+
 JS Object --------JSON.stringify()----------> JSON
 
 
@@ -574,12 +578,20 @@ JSON String --------JSON.parse()--------> JSON
 [{},{},{}] = Array Of Objects
 
 
+Today we will learn 
+1. DRY Principle
+   Don't Repeat Yourself
+
+   Reusability
+
+2. Update Operation (CRUD)
+3. Delete Operation (CRUD)
 
 
 
+How you can use Custom Attribute in HTML ?
 
+<start data-anything="anyvalue" id="" class="" src="" href="" >ContentArea</end>
 
-
-
-
-
+<start data-anil="z9l63i6vw4g3usv5dr8sqpai" id="" class="" src="" href="" >ContentArea</end>
+<start data-delid="z9l63i6vw4g3usv5dr8sqpai" id="" class="" src="" href="" >ContentArea</end>
