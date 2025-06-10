@@ -589,6 +589,28 @@ Today we will learn
 
 
 
+Swal.fire({
+  title: "Are you sure?",
+  text: "You won't be able to revert this!",
+  icon: "warning",
+  showCancelButton: true,
+  confirmButtonColor: "#3085d6",
+  cancelButtonColor: "#d33",
+  confirmButtonText: "Yes, delete it!"
+}).then((result) => {
+  if (result.isConfirmed) {
+    Swal.fire({
+      title: "Deleted!",
+      text: "Your file has been deleted.",
+      icon: "success"
+    });
+  }
+});
+
+Object.method().then().catch().finally();
+PO.then(cbfn).catch().finally();
+
+
 How you can use Custom Attribute in HTML ?
 
 <start data-anything="anyvalue" id="" class="" src="" href="" >ContentArea</end>
