@@ -617,3 +617,14 @@ How you can use Custom Attribute in HTML ?
 
 <start data-anil="z9l63i6vw4g3usv5dr8sqpai" id="" class="" src="" href="" >ContentArea</end>
 <start data-delid="z9l63i6vw4g3usv5dr8sqpai" id="" class="" src="" href="" >ContentArea</end>
+
+
+Today We will Learn
+1. How to reload page when entry is done. Done
+Longformat	window.location.reload();
+Shortformat	location.reload();
+
+
+2. How to show Loader/Spinner while data is loading....
+3. View Data using Bootstrap Modal
+4. Update Operation (CRUD)
