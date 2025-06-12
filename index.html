@@ -11,17 +11,22 @@
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="height:300px; overflow-y: scroll;">
+                       <ul class="list-group">
+                            <li class="list-group-item">Car Name: - <span id="cname"></span></li>
+                            <li class="list-group-item">Car Model Year: - <span id="cmodelyear"></span></li>
+                            <li class="list-group-item">Fuel Type: - <span id="cfueltype"></span></li>
+                            <li class="list-group-item">Color: - <span id="ccolor"></span></li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -171,7 +176,10 @@
                             <tr>
                                 <td>${variable.car_name}</td>
                                 <td>
-                                    <button  class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                                    <input type="hidden" name="model_year" value="${variable.model_year}" />
+                                    <input type="hidden" name="fuel_type" value="${variable.fuel_type}" />
+                                    <input type="hidden" name="color" value="${variable.color}" />
+                                    <button  class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="getElement(this)">View</button>
                                     <button class="btn btn-sm btn-info">Edit</button>
                                     <button class="btn btn-sm btn-danger" onclick="deleteElement(this)" data-delid=${variable.documentId}>Delete</button>
                                 </td>
@@ -200,6 +208,23 @@
             (()=>{
                 console.log('OK');
             })();
+
+            //1. Function defination is one time process
+            function getElement(e){ // e is a formal argument, e = event
+                console.log('>>>>>>',e);
+                console.log(e.closest('tr').querySelector('td:first-child').innerHTML);
+                console.log(e.closest('td').querySelector('input:first-child').value);
+                console.log(e.closest('td').querySelector('input:nth-child(2)').value);
+                console.log(e.closest('td').querySelector('input:nth-child(3)').value);
+
+
+                document.getElementById('cname').innerHTML = e.closest('tr').querySelector('td:first-child').innerHTML;
+                document.getElementById('cmodelyear').innerHTML = e.closest('td').querySelector('input:first-child').value;
+                document.getElementById('cfueltype').innerHTML = e.closest('td').querySelector('input:nth-child(2)').value;
+                document.getElementById('ccolor').innerHTML = e.closest('td').querySelector('input:nth-child(3)').value;
+
+            }
+
 
             //1. Function defination is one time process
             function deleteElement(e){ // e is a formal argument e = event
